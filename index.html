@@ -47,6 +47,10 @@
             scroll-margin-top: 130px;
         }
 
+        .tier-bar {
+            transition: width .8s cubic-bezier(.16,1,.3,1);
+        }
+
         .nav-link {
             position: relative;
             white-space: nowrap;
@@ -96,10 +100,6 @@
             background: linear-gradient(to left, #0072ce, #00bce4);
             -webkit-background-clip: text;
             color: transparent;
-        }
-
-        .tier-bar {
-            transition: width .8s cubic-bezier(.16,1,.3,1);
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -310,7 +310,7 @@
 
                             <div class="mt-8 pt-6 border-t border-white/15 text-sm">
                                 <div class="text-amsalem-teal font-bold mb-1">מחיר אחד, שקוף</div>
-                                <p class="text-slate-300 leading-relaxed">ללקוח מוצג מחיר סופי, אחיד וכולל.</p>
+                                <p class="text-slate-300 leading-relaxed">ללקוח יוצג מחיר סופי, אחיד וכולל.</p>
                             </div>
                         </div>
                     </div>
@@ -326,7 +326,7 @@
                             <div class="bg-white rounded-xl border border-slate-100 p-5">
                                 <div class="flex items-baseline justify-between gap-4 mb-3">
                                     <div class="font-bold text-elal-navy">הליך פשוט</div>
-                                    <div class="text-3xl font-extrabold text-elal-blue">$25</div>
+                                    <div class="text-3xl font-extrabold text-elal-blue"><span dir="ltr">25 USD</span></div>
                                 </div>
                                 <div class="h-1.5 rounded-full bg-slate-100">
                                     <div class="h-full rounded-full bg-elal-blue" style="width:29%"></div>
@@ -336,7 +336,7 @@
                             <div class="bg-white rounded-xl border border-slate-100 p-5">
                                 <div class="flex items-baseline justify-between gap-4 mb-3">
                                     <div class="font-bold text-elal-navy">הליך מורכב</div>
-                                    <div class="text-3xl font-extrabold text-amsalem-teal">$85</div>
+                                    <div class="text-3xl font-extrabold text-amsalem-teal"><span dir="ltr">85 USD</span></div>
                                 </div>
                                 <div class="h-1.5 rounded-full bg-slate-100">
                                     <div class="h-full rounded-full bg-amsalem-teal" style="width:100%"></div>
@@ -356,19 +356,19 @@
                 </div>
 
                 <p class="text-slate-600 leading-relaxed mb-8 max-w-3xl">
-                    אל על זכאית לעמלה המחושבת על בסיס היקף המכירות המצטבר בכל שנת התקשרות, בתוספת מע״מ כדין. העמלה מחושבת באופן מדורג.
+                    אל על תהיה זכאית לעמלה המחושבת על בסיס היקף המכירות המצטבר בכל שנת התקשרות, בתוספת מע״מ כדין. העמלה תחושב באופן מדורג.
                 </p>
 
                 <div class="rounded-2xl border border-slate-200 overflow-hidden shadow-soft bg-white">
                     <div class="hidden md:grid grid-cols-12 bg-elal-navy text-white text-sm font-bold px-8 py-4">
-                        <div class="col-span-5">מדרגת מכירות בשנת התקשרות</div>
-                        <div class="col-span-5">היקף יחסי</div>
-                        <div class="col-span-2 text-left">שיעור עמלה</div>
+                        <div class="col-span-5">מדרגת מכירות בשנת ההתקשרות</div>
+                        <div class="col-span-5"></div>
+                        <div class="col-span-2 text-left">שיעור העמלה</div>
                     </div>
 
                     <!-- מדרגה א -->
                     <div class="grid grid-cols-12 items-center px-6 md:px-8 py-4 border-b border-slate-100 hover:bg-slate-50 transition">
-                        <div class="col-span-8 md:col-span-5 font-medium text-elal-navy">עד $1,000,000</div>
+                        <div class="col-span-8 md:col-span-5 font-medium text-elal-navy">עד <span dir="ltr">1,000,000 USD</span></div>
                         <div class="hidden md:block col-span-5 pl-8">
                             <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
                                 <div class="tier-bar h-full rounded-full bg-elal-blue" style="width:44%"></div>
@@ -379,7 +379,7 @@
 
                     <!-- מדרגה ב -->
                     <div class="grid grid-cols-12 items-center px-6 md:px-8 py-4 border-b border-slate-100 hover:bg-slate-50 transition">
-                        <div class="col-span-8 md:col-span-5 font-medium text-elal-navy">$1,000,001 – $2,000,000</div>
+                        <div class="col-span-8 md:col-span-5 font-medium text-elal-navy"><span dir="ltr">1,000,001 – 2,000,000 USD</span></div>
                         <div class="hidden md:block col-span-5 pl-8">
                             <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
                                 <div class="tier-bar h-full rounded-full bg-elal-blue" style="width:55%"></div>
@@ -390,7 +390,7 @@
 
                     <!-- מדרגה ג -->
                     <div class="grid grid-cols-12 items-center px-6 md:px-8 py-4 border-b border-slate-100 hover:bg-slate-50 transition">
-                        <div class="col-span-8 md:col-span-5 font-medium text-elal-navy">$2,000,001 – $3,000,000</div>
+                        <div class="col-span-8 md:col-span-5 font-medium text-elal-navy"><span dir="ltr">2,000,001 – 3,000,000 USD</span></div>
                         <div class="hidden md:block col-span-5 pl-8">
                             <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
                                 <div class="tier-bar h-full rounded-full bg-elal-blue" style="width:66%"></div>
@@ -401,7 +401,7 @@
 
                     <!-- מדרגה ד -->
                     <div class="grid grid-cols-12 items-center px-6 md:px-8 py-4 border-b border-slate-100 hover:bg-slate-50 transition">
-                        <div class="col-span-8 md:col-span-5 font-medium text-elal-navy">$3,000,001 – $4,000,000</div>
+                        <div class="col-span-8 md:col-span-5 font-medium text-elal-navy"><span dir="ltr">3,000,001 – 4,000,000 USD</span></div>
                         <div class="hidden md:block col-span-5 pl-8">
                             <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
                                 <div class="tier-bar h-full rounded-full bg-elal-blue" style="width:77%"></div>
@@ -412,7 +412,7 @@
 
                     <!-- מדרגה ה -->
                     <div class="grid grid-cols-12 items-center px-6 md:px-8 py-4 border-b border-slate-100 hover:bg-slate-50 transition">
-                        <div class="col-span-8 md:col-span-5 font-medium text-elal-navy">$4,000,001 – $5,000,000</div>
+                        <div class="col-span-8 md:col-span-5 font-medium text-elal-navy"><span dir="ltr">4,000,001 – 5,000,000 USD</span></div>
                         <div class="hidden md:block col-span-5 pl-8">
                             <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
                                 <div class="tier-bar h-full rounded-full bg-elal-blue" style="width:88%"></div>
@@ -423,7 +423,7 @@
 
                     <!-- מדרגה ו -->
                     <div class="grid grid-cols-12 items-center px-6 md:px-8 py-5 bg-slate-50/60 hover:bg-slate-50 transition">
-                        <div class="col-span-8 md:col-span-5 font-bold text-elal-navy">$5,000,001 ומעלה</div>
+                        <div class="col-span-8 md:col-span-5 font-bold text-elal-navy"><span dir="ltr">5,000,001 USD</span> ומעלה</div>
                         <div class="hidden md:block col-span-5 pl-8">
                             <div class="h-2 rounded-full bg-slate-100 overflow-hidden">
                                 <div class="tier-bar h-full rounded-full bg-amsalem-teal" style="width:100%"></div>
@@ -436,7 +436,7 @@
                 <div class="mt-6 flex items-start gap-3 rounded-xl bg-elal-light/60 border border-blue-100 p-5">
                     <svg class="w-5 h-5 shrink-0 mt-0.5 text-elal-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     <p class="text-sm text-slate-600 leading-relaxed">
-                        <strong class="text-elal-navy">חישוב מדורג בלבד.</strong> כל שיעור עמלה חל רק על חלק המכירות המצוי במדרגה הרלוונטית. מעבר למדרגה גבוהה יותר אינו מחיל את השיעור החדש באופן רטרואקטיבי על מכירות שנכללו במדרגות קודמות.
+                        <strong class="text-elal-navy">חישוב מדורג בלבד.</strong> כל שיעור עמלה יחול רק על חלק המכירות המצוי במדרגה הרלוונטית. מעבר למדרגה גבוהה יותר לא יחיל את השיעור החדש באופן רטרואקטיבי על מכירות שנכללו במדרגות קודמות.
                     </p>
                 </div>
             </div>
@@ -456,28 +456,28 @@
                             <div class="shrink-0 w-2 h-2 rounded-full bg-elal-blue mt-2"></div>
                             <div>
                                 <div class="font-bold text-elal-navy mb-1">סליקה במערך של אל על</div>
-                                <p class="text-sm text-slate-600 leading-relaxed">כלל העסקאות נסלקות באמצעות מערך הסליקה של אל על.</p>
+                                <p class="text-sm text-slate-600 leading-relaxed">כלל העסקאות ייסלקו באמצעות מערך הסליקה של אל על.</p>
                             </div>
                         </li>
                         <li class="flex gap-4">
                             <div class="shrink-0 w-2 h-2 rounded-full bg-elal-blue mt-2"></div>
                             <div>
                                 <div class="font-bold text-elal-navy mb-1">העברת נטו לאמסלם</div>
-                                <p class="text-sm text-slate-600 leading-relaxed">אל על מעבירה את הסכום שהתקבל בפועל מחברת האשראי, בניכוי עמלת סליקה בשיעור <strong class="text-elal-navy">0.5%</strong> מסכום העסקאות.</p>
+                                <p class="text-sm text-slate-600 leading-relaxed">אל על תעביר את הסכום שהתקבל בפועל מחברת האשראי, בניכוי עמלת סליקה בשיעור <strong class="text-elal-navy">0.5%</strong> מסכום העסקאות.</p>
                             </div>
                         </li>
                         <li class="flex gap-4">
                             <div class="shrink-0 w-2 h-2 rounded-full bg-elal-blue mt-2"></div>
                             <div>
                                 <div class="font-bold text-elal-navy mb-1">תוך 7 ימים</div>
-                                <p class="text-sm text-slate-600 leading-relaxed">העברת הכספים מתבצעת בתוך שבעה ימים ממועד קבלתם בפועל אצל אל על.</p>
+                                <p class="text-sm text-slate-600 leading-relaxed">העברת הכספים תתבצע בתוך שבעה ימים ממועד קבלתם בפועל אצל אל על.</p>
                             </div>
                         </li>
                         <li class="flex gap-4">
                             <div class="shrink-0 w-2 h-2 rounded-full bg-amsalem-teal mt-2"></div>
                             <div>
                                 <div class="font-bold text-elal-navy mb-1">התחשבנות רבעונית וקיזוז</div>
-                                <p class="text-sm text-slate-600 leading-relaxed">ההתחשבנות על עמלת אל על נערכת אחת לרבעון, על בסיס המכירות המצטברות מתחילת שנת ההתקשרות. סכום העמלה מקוזז מהסכומים המועברים לאמסלם.</p>
+                                <p class="text-sm text-slate-600 leading-relaxed">ההתחשבנות על עמלת אל על תיערך אחת לרבעון, על בסיס המכירות המצטברות מתחילת שנת ההתקשרות. סכום העמלה יקוזז מהסכומים המועברים לאמסלם.</p>
                             </div>
                         </li>
                     </ol>
@@ -496,9 +496,9 @@
                     </div>
 
                     <ul class="space-y-3 text-sm text-slate-600">
-                        <li class="flex items-start gap-3"><div class="mt-1.5 w-2 h-2 rounded-full bg-elal-blue shrink-0"></div>כל תקופה רצופה של 365 ימים ממועד כניסת ההסכם לתוקף נחשבת שנת התקשרות נפרדת לצורך חישוב המדרגות.</li>
-                        <li class="flex items-start gap-3"><div class="mt-1.5 w-2 h-2 rounded-full bg-elal-blue shrink-0"></div>בתחילת כל שנת התקשרות היקף המכירות המצטבר מתאפס והחישוב מתחיל מחדש.</li>
-                        <li class="flex items-start gap-3"><div class="mt-1.5 w-2 h-2 rounded-full bg-amsalem-teal shrink-0"></div>מכירות שנצברו בשנת התקשרות אחת אינן מועברות לשנה שלאחריה לצורך חישוב המדרגות.</li>
+                        <li class="flex items-start gap-3"><div class="mt-1.5 w-2 h-2 rounded-full bg-elal-blue shrink-0"></div>כל תקופה רצופה של 365 ימים ממועד כניסת ההסכם לתוקף תיחשב שנת התקשרות נפרדת לצורך חישוב המדרגות.</li>
+                        <li class="flex items-start gap-3"><div class="mt-1.5 w-2 h-2 rounded-full bg-elal-blue shrink-0"></div>בתחילת כל שנת התקשרות היקף המכירות המצטבר יתאפס והחישוב יתחיל מחדש.</li>
+                        <li class="flex items-start gap-3"><div class="mt-1.5 w-2 h-2 rounded-full bg-amsalem-teal shrink-0"></div>מכירות שנצברו בשנת התקשרות אחת לא יועברו לשנה שלאחריה לצורך חישוב המדרגות.</li>
                     </ul>
                 </div>
 
@@ -555,7 +555,7 @@
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-elal-navy mb-3">ערך כלכלי ישיר</h3>
-                    <p class="text-slate-600">צמצום מקרי No-Show עקב היעדר אשרה: מושב שנותר ריק, עלויות טיפול בנוסע שלא עלה, חשיפה לקנסות בגין סירוב כניסה ביעד.</p>
+                    <p class="text-slate-600">צמצום מקרי ה-NO SHOW עקב היעדר אשרה: מושב שנותר ריק, עלויות טיפול בנוסע שלא עלה, חשיפה לקנסות בגין סירוב כניסה ביעד.</p>
                 </div>
             </div>
 
@@ -629,6 +629,7 @@
     </footer>
 
     <script>
+
         // חשיפה הדרגתית של מדרגות העמלה בגלילה
         (function () {
             var bars = document.querySelectorAll('.tier-bar');
